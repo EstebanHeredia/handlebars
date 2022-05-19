@@ -1,0 +1,21 @@
+<h1>Historial</h1>
+
+<% const isProducts = productos?.length>0 %> 
+<% if(isProducts) {%>
+<table>
+    <tr>
+        <th>Nombre</th>
+        <th>Cantidad</th>
+        <th>Imagen</th>
+    </tr>
+    <% for(const producto of productos) {%>
+    <tr>
+        <td><% producto.nombre %> </td>
+        <td><% producto.cantidad %</td>
+        <td><img src="<% producto.url %>" alt="img"></td>
+    </tr> 
+    <%}%>
+</table> 
+<% } else {%>
+<h1>No hay productos</h1>
+<% } %>
