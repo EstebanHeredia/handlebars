@@ -10,9 +10,9 @@
     </tr>
     <% for(const producto of productos) {%>
     <tr>
-        <td><% producto.nombre %> </td>
-        <td><% producto.cantidad %</td>
-        <td><img src="<% producto.url %>" alt="img"></td>
+        <td><%= producto.nombre %> </td>
+        <td><%= producto.cantidad %></td>
+        <td><img src=<%= producto.imagen %> alt="img"></td>
     </tr> 
     <%}%>
 </table> 
